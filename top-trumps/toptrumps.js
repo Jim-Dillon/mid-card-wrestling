@@ -44,11 +44,11 @@ computerImage.src = comp.img
 // create function - establish all outcomes of fight. 
 const determineWinner = (user, comp ) => {
     if (user.ovr === comp.ovr) {
-      return 'no one wins';
+      output.innerText = 'no one wins';
     } else if (user.ovr > comp.ovr) {
-      return 'you win';
+      output.innerText = 'you win';
     } else {
-      return 'computer wins';
+      output.innerText = 'computer wins';
     }
   }
 

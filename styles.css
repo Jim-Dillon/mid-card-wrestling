@@ -740,3 +740,7 @@ a, a:hover, a:active {
 
 /* top trumps */
 
+.game-container {
+    display: flex;
+    justify-content: center;
+}
