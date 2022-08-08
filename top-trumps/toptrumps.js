@@ -50,7 +50,7 @@ const getUserChoice = () => {
     }
 };
 
-// console.log(getUserChoice());
+console.log(getUserChoice());
 
 
 // generate random choice for computer 
@@ -80,7 +80,7 @@ const getComputerChoice = () => {
     }
 };
 
-// console.log(getComputerChoice());
+console.log(getComputerChoice());
 
 
 // create function - establish all outcomes of fight. 
@@ -94,17 +94,15 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 
-//   console.log(determineWinner(wrestlers[7], wrestlers[1]));
+  console.log(determineWinner(getUserChoice(), getComputerChoice()));
 
-const playGame = () => {
-    const userChoice = getUserChoice();
-    const computerChoice = getComputerChoice();
-    console.log('You got: ' + userChoice);
-    console.log('The computer got: ' + computerChoice);
+// const playGame = () => {
+//     const userChoice = getUserChoice();
+//     const computerChoice = getComputerChoice();
+//     console.log('You got: ' + userChoice);
+//     console.log('The computer got: ' + computerChoice);  
+// }
 
-    
-}
 
-console.log(determineWinner(getUserChoice(), getComputerChoice()));
 
 
