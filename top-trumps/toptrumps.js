@@ -94,7 +94,7 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 
-//   console.log(determineWinner(wrestlers[8], wrestlers[1]));
+//   console.log(determineWinner(wrestlers[7], wrestlers[1]));
 
 const playGame = () => {
     const userChoice = getUserChoice();
@@ -102,10 +102,9 @@ const playGame = () => {
     console.log('You got: ' + userChoice);
     console.log('The computer got: ' + computerChoice);
 
-    console.log(determineWinner(getUserChoice, getComputerChoice));
+    
 }
 
+console.log(determineWinner(getUserChoice(), getComputerChoice()));
 
-
-console.log(playGame()); 
 
