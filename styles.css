@@ -740,7 +740,60 @@ a, a:hover, a:active {
 
 /* top trumps */
 
-.game-container {
+.game-cards-container {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+}
+
+.game-title {
+    text-align: center;
+    font-family: 'American Captain', sans-serif;
+    font-size: 50px;
+}
+
+.winner-container {
+    margin-top: 200px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.winner-text {
+    text-align: center;
+    font-family: 'American Captain', sans-serif;
+    font-size: 40px;
+}
+
+.winner {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'American Captain', sans-serif;
+    font-size: 50px;
+    color: red;
+    margin-top: 10px;
+}
+
+.game-buttons-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-buttons {
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: #C0EEFF;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.game-buttons:hover {
+    background-color: black;
+    color: #C0EEFF;
 }

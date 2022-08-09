@@ -42,13 +42,13 @@ computerImage.src = comp.img
 
 
 // create function - establish all outcomes of fight. 
-const determineWinner = (user, comp ) => {
+const determineWinner = (user, comp) => {
     if (user.ovr === comp.ovr) {
-      output.innerText = 'no one wins';
+      output.innerText = 'draw';
     } else if (user.ovr > comp.ovr) {
-      output.innerText = 'you win';
+      output.innerText = 'you';
     } else {
-      output.innerText = 'computer wins';
+      output.innerText = 'computer';
     }
   }
 
