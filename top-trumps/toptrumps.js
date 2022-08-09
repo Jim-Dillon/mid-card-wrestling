@@ -1,6 +1,9 @@
 // winner will hold the value of output
 const output = document.querySelector('.winner');
 
+const playButton = document.querySelector('.play-game');
+const nextButton = document.querySelector('.next-hand')
+
 // an array of wrestlers with their pertinent attributes
 wrestlers = [
   {title:"'Hangman' Adam Page", ovr:99, img:"../Illustrations/game cards/hangman card.png"},
@@ -52,9 +55,20 @@ const determineWinner = (user, comp) => {
     }
   }
 
- 
+  // create fucntion - reload the page 
 
-  console.log(determineWinner(user, comp));
+
+
+playButton.addEventListener('click', e => {
+    console.log(determineWinner(user, comp));
+});   
+
+nextButton.addEventListener('click', e => {
+    location.reload();
+})
+
+
+
 
 
 
