@@ -2,7 +2,10 @@
 const output = document.querySelector('.winner');
 
 const playButton = document.querySelector('.play-game');
-const nextButton = document.querySelector('.next-hand')
+const nextButton = document.querySelector('.next-hand');
+const youImage = document.querySelector('.you-card-image');
+const computerImage = document.querySelector('.computer-card-image');
+
 
 // an array of wrestlers with their pertinent attributes
 wrestlers = [
@@ -37,10 +40,10 @@ console.log(comp);
 
 
 // adds a src for images' 'img' property so they appear on screen
-const youImage = document.querySelector('.you-card-image');
+
 youImage.src = user.img
 
-const computerImage = document.querySelector('.computer-card-image');
+
 computerImage.src = comp.img
 
 
@@ -55,16 +58,21 @@ const determineWinner = (user, comp) => {
     }
   }
 
-  // create fucntion - reload the page 
+  // create function - reload the page 
 
 
 
 playButton.addEventListener('click', e => {
     console.log(determineWinner(user, comp));
+    playButton.classList.add('grey-button');
+    nextButton.classList.remove('grey-button');
+    nextButton.classList.add('ready-button');
 });   
 
 nextButton.addEventListener('click', e => {
     location.reload();
+    playButton.classList.add('game-buttons');
+    nextButton.classList.add('grey-button');
 })
 
 
