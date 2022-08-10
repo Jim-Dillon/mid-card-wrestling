@@ -752,6 +752,56 @@ a, a:hover, a:active {
     font-size: 50px;
 }
 
+.card-container {
+    width: 257px;
+    height: 360px;
+    background-color: #FF0000;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card-content {
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 239px;
+}
+
+.card-image-container {
+    margin: 0 auto;
+    height: 266px;
+    width: 233px;
+}
+
+.card-image {
+    border-radius: 6px 6px 0px 0px;
+    /* height: 267px; */
+    
+}
+
+.card-info-container {
+    height: 68px;
+    background-color: #808080;
+    width: 233px;
+    margin: 0 auto;
+    border-radius: 0px 0px 6px 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+
+.card-text {
+    font-family: 'American Captain', sans-serif;
+    color: white;
+    font-size: 27px;
+}
+
+.card-ovr {
+    font-family: 'American Captain', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+
 .winner-container {
     margin-top: 200px;
     padding-right: 30px;
@@ -816,4 +866,9 @@ a, a:hover, a:active {
     border: 2px solid #C4C4C4;
     border-radius: 4px;
     padding: 20px;
+}
+
+
+.is-hidden {
+    display: none;
 }
