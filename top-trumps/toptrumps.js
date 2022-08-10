@@ -67,9 +67,9 @@ const determineWinner = (user, comp) => {
     }
   }
 
-  // create function - reload the page 
+  
 
-
+// add click events for when you start game
 
 playButton.addEventListener('click', e => {
     console.log(determineWinner(user, comp));
@@ -78,7 +78,9 @@ playButton.addEventListener('click', e => {
     nextButton.classList.add('ready-button');
     youCard.classList.remove('is-hidden');
     computerCard.classList.remove('is-hidden');
-});   
+}); 
+
+// add click events for when you restart game
 
 nextButton.addEventListener('click', e => {
     location.reload();
