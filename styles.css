@@ -740,6 +740,18 @@ a, a:hover, a:active {
 
 /* top trumps */
 
+
+.top-trumps-image-container {
+    max-width: 1440px;
+    /* height: 402px; */
+    margin: 0 auto;
+}
+
+.top-trumps-hero {
+    width: 100%;
+    /* height: 402px; */
+}
+
 .game-cards-container {
     display: flex;
     justify-content: center;
@@ -752,6 +764,48 @@ a, a:hover, a:active {
     font-size: 50px;
 }
 
+/* flipcard attempt */
+
+/* .flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 269px;
+    height: 376px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.you-back-card-container, .you-card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.you-back-card-container {
+    background-color: #bbb;
+    color: black;
+}
+
+.you-card-container {
+    transform: rotateY(180deg);
+} */
+
+
+/* end of flipcard */ 
+
 .card-container {
     width: 257px;
     height: 360px;
@@ -762,7 +816,7 @@ a, a:hover, a:active {
 
 .card-content {
     border: 3px solid black;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 239px;
 }
 
@@ -783,7 +837,7 @@ a, a:hover, a:active {
     background-color: #808080;
     width: 233px;
     margin: 0 auto;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 7px 7px;
     display: flex;
     justify-content: space-between;
     padding: 10px 10px 0px 10px;
@@ -792,13 +846,16 @@ a, a:hover, a:active {
 .card-text {
     font-family: 'American Captain', sans-serif;
     color: white;
-    font-size: 27px;
+    font-size: 28px;
+    width: 113px;
 }
 
 .card-ovr {
     font-family: 'American Captain', sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 52px;
+    height: 42px;
+    padding-top: 4px;
 }
 
 
@@ -867,7 +924,6 @@ a, a:hover, a:active {
     border-radius: 4px;
     padding: 20px;
 }
-
 
 .is-hidden {
     display: none;

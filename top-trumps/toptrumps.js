@@ -11,7 +11,9 @@ const computerName = document.querySelector('.computer-card-name');
 const youOverall = document.querySelector('.you-card-ovr');
 const computerOverall = document.querySelector('.computer-card-ovr');
 const youCard = document.querySelector('.you-card-container');
-const computerCard = document.querySelector('.computer-card-container')
+const computerCard = document.querySelector('.computer-card-container');
+const youBackCard = document.querySelector('.you-back-card-container');
+const compBackCard = document.querySelector('.comp-back-card-container');
 
 // an array of wrestlers with their pertinent attributes
 wrestlers = [
@@ -78,6 +80,8 @@ playButton.addEventListener('click', e => {
     nextButton.classList.add('ready-button');
     youCard.classList.remove('is-hidden');
     computerCard.classList.remove('is-hidden');
+    youBackCard.classList.add('is-hidden');
+    compBackCard.classList.add('is-hidden');
 }); 
 
 // add click events for when you restart game
@@ -88,8 +92,11 @@ nextButton.addEventListener('click', e => {
     nextButton.classList.add('grey-button');
     youCard.classList.add('is-hidden');
     computerCard.classList.add('is-hidden');
-})
+    youBackCard.classList.remove('is-hidden');
+    compBackCard.classList.remove('is-hidden');
 
+    
+})
 
 
 
