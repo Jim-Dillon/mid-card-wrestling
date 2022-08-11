@@ -1,0 +1,92 @@
+---
+site_title: Mid-Card Wrestling
+---
+
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ site_title }}</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <div class='nav-wrapper'>    
+                <div class="logo">
+                    <img src="Illustrations/Logo-new.jpg" alt="logo for website">
+                </div>
+                <div class="topnav-right">
+                    <a href="#" class="blog-button">Blog</a>
+                    <a href="#" class="cool-shit-button">Cool Shit</a>
+                    <a href="#" class="about-button">About</a>
+                    <a href="mailto:midcardwrestling@gmail.com" class="contact-button">Contact</a>
+                    <a href="#" class="Search-icon">
+                        <img src="Illustrations/Logos:Icons /Search-icon.svg" alt="Search Icon">
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+    {{ content | safe }}
+
+    <footer>
+
+        <div class="footer-section">
+            <div class="footer-container">
+                <div class="footer">                   
+                    <div class="footer-heading footer-logo">
+                        <img src="Illustrations/Logo-new.jpg" alt="logo for website">
+                    </div>
+                        
+                    <div class='footer-heading footer-2'>
+                        <ul class='contact-methods'>
+                            <li class="contact-me">CONTACT ME</li>
+                            <li><a href="mailto:midcardwrestling@gmail.com">Email</a></li>
+                            <li><a href="#">(+44) 780 922 3043</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-heading footer-3">
+                        <ul class='general-footer-links'>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Cool Shit</a></li>            
+                        </ul>
+                    </div>
+
+                    <div class="footer-heading footer-4">
+                        <ul class="social-icons">
+                            <li><a href="#" class="Twitter-icon">
+                                <img src="Illustrations/Logos:Icons /Twitter_white.svg" alt="Twitter logo">
+                                </a>
+                            </li>
+
+                            <li><a href="#" class="Facebook-icon">
+                                <img src="Illustrations/Logos:Icons /Facebook_white.svg" alt="Facebook logo">
+                                </a>
+                            </li> 
+                            
+                            <li><a href="#" class="Linkedin-icon">
+                                <img src="Illustrations/Logos:Icons /LinkedIN_white.svg" alt="LinkedIn logo">
+                                </a>
+                            </li>
+                            
+                            <li><a href="#" class="Instagram-icon">
+                                <img src="Illustrations/Logos:Icons /Instagram_white.svg" alt="Instagram Logo">
+                                </a>
+                            </li>       
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>  
+
+    </footer> 
+
+
+
+    <script src="./js/carousel.js"></script>
+
+    </body>
+</html>        
