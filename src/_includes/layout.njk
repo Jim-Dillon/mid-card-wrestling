@@ -8,23 +8,57 @@ site_title: Mid-Card Wrestling
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ site_title }}</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
         <div class="topnav">
             <div class='nav-wrapper'>    
                 <div class="logo">
-                    <img src="Illustrations/Logo-new.jpg" alt="logo for website">
-                </div>
-                <div class="topnav-right">
-                    <a href="#" class="blog-button">Blog</a>
-                    <a href="#" class="cool-shit-button">Cool Shit</a>
-                    <a href="#" class="about-button">About</a>
-                    <a href="mailto:midcardwrestling@gmail.com" class="contact-button">Contact</a>
-                    <a href="#" class="Search-icon">
-                        <img src="Illustrations/Logos:Icons /Search-icon.svg" alt="Search Icon">
+                    <a href="../" class="logo-style">
+                        <img src="/Illustrations/Logo-new.jpg" alt="logo for website">
                     </a>
+                </div> 
+
+                <div class="dropdown-header">
+                    <a href="#" class="dropdown-icon">
+                        <img src="/Illustrations/dropdown-menu.svg" class="dropdown-image">
+                    </a>    
+                    <a href="#" class="x-icon">
+                        <img src="/Illustrations/close.png">
+                    </a>     
+                    <ul class="dropdown-buttons">
+                        <li class="dr-blog-button-box">
+                            <a href="http://localhost:8080/blogs/" class="dr-blog-button">Blog</a>
+                        </li>
+                        <li class="dr-cool-shit-button-box">    
+                            <a href="http://localhost:8080/coolshit/" class="dr-cool-shit-button">Cool Shit</a>
+                        </li>
+                        <li class="dr-trumps-button-box">    
+                            <a href="http://localhost:8080/trumps" class="dr-trumps-button">Top Trumps</a>
+                        </li>   
+                        <li class="dr-contact-button-box"> 
+                            <a href="mailto:hi@midcardwrestling.com" class="dr-contact-button">Contact</a>
+                        </li>
+                    </ul>   
                 </div>
+
+
+
+
+                <ul class="topnav-right">
+                    <li class="blog-button-box">
+                        <a href="http://localhost:8080/blogs/" class="blog-button">Blog</a>
+                    </li>
+                    <li class="cool-shit-button-box">    
+                        <a href="http://localhost:8080/coolshit/" class="cool-shit-button">Cool Shit</a>
+                    </li>
+                    <li class="trumps-button-box">    
+                        <a href="http://localhost:8080/trumps" class="trumps-button">Top Trumps</a>
+                    </li>   
+                    <li class="contact-button-box"> 
+                        <a href="mailto:hi@midcardwrestling.com" class="contact-button">Contact</a>
+                    </li>
+                </ul>
             </div> 
         </div>
 
@@ -35,48 +69,54 @@ site_title: Mid-Card Wrestling
         <div class="footer-section">
             <div class="footer-container">
                 <div class="footer">                   
-                    <div class="footer-heading footer-logo">
-                        <img src="Illustrations/Logo-new.jpg" alt="logo for website">
-                    </div>
-                        
-                    <div class='footer-heading footer-2'>
-                        <ul class='contact-methods'>
-                            <li class="contact-me">CONTACT ME</li>
-                            <li><a href="mailto:midcardwrestling@gmail.com">Email</a></li>
-                            <li><a href="#">(+44) 780 922 3043</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-heading footer-3">
-                        <ul class='general-footer-links'>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Cool Shit</a></li>            
-                        </ul>
-                    </div>
-
-                    <div class="footer-heading footer-4">
-                        <ul class="social-icons">
-                            <li><a href="#" class="Twitter-icon">
-                                <img src="Illustrations/Logos:Icons /Twitter_white.svg" alt="Twitter logo">
-                                </a>
-                            </li>
-
-                            <li><a href="#" class="Facebook-icon">
-                                <img src="Illustrations/Logos:Icons /Facebook_white.svg" alt="Facebook logo">
-                                </a>
-                            </li> 
+                    <div class="footer-column-1">
+                        <div class="footer-heading footer-logo">
+                            <img src="/Illustrations/Logo-new.jpg" alt="logo for website">
+                        </div>
                             
-                            <li><a href="#" class="Linkedin-icon">
-                                <img src="Illustrations/Logos:Icons /LinkedIN_white.svg" alt="LinkedIn logo">
-                                </a>
-                            </li>
-                            
-                            <li><a href="#" class="Instagram-icon">
-                                <img src="Illustrations/Logos:Icons /Instagram_white.svg" alt="Instagram Logo">
-                                </a>
-                            </li>       
-                        </ul>
+                        <div class='footer-heading footer-2'>
+                            <ul class='contact-methods'>
+                                <li class="contact-me">CONTACT ME</li>
+                                <li><a href="mailto:hi@midcardwrestling.com">Email</a></li>
+                                <li><a href="#">(+44) 780 922 3043</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column-2">
+                        <div class="footer-heading footer-3">
+                            <ul class='general-footer-links'>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Cool shit</a></li>
+                                <li><a href="#">Top Trumps</a></li>            
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-heading footer-4">
+                            <ul class="social-icons">
+                                <div class="social-icons-row-1">
+                                    <li><a href="#" class="twitter-icon">
+                                        <img src="/Illustrations/Logos:Icons /Twitter_white.svg" alt="Twitter logo" class="social-logos">
+                                        </a>
+                                    </li>
+
+                                    <li><a href="#" class="facebook-icon">
+                                        <img src="/Illustrations/Logos:Icons /Facebook_white.svg" alt="Facebook logo" class="social-logos">
+                                        </a>
+                                    </li> 
+                                </div>
+                                <div class="social-icons-row-2">    
+                                    <li><a href="#" class="linkedin-icon">
+                                        <img src="/Illustrations/Logos:Icons /LinkedIN_white.svg" alt="LinkedIn logo" class="social-logos">
+                                        </a>
+                                    </li>
+                                    
+                                    <li><a href="#" class="instagram-icon">
+                                        <img src="/Illustrations/Logos:Icons /Instagram_white.svg" alt="Instagram Logo" class="social-logos">
+                                        </a>
+                                    </li>  
+                                </div>         
+                            </ul>
+                        </div>
                     </div>
                 </div> 
             </div>
@@ -85,8 +125,9 @@ site_title: Mid-Card Wrestling
     </footer> 
 
 
-
-    <script src="./js/carousel.js"></script>
+    
+    <script src="/js/carousel.js"></script>
+    
 
     </body>
 </html>        
