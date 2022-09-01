@@ -117,7 +117,6 @@ body {
 
 .hero-image-container {
     max-width: 944px;
-    /* height: 440px; */
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
@@ -223,10 +222,6 @@ b {
     margin: 0 auto;
     margin-bottom: 25px;
     margin-top: 27px;
-}
-
-.blog-t10-hero-container {
-    /* height: 430px; */
 }
 
 .blog-top10-img {
