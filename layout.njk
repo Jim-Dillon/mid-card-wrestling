@@ -1,0 +1,74 @@
+---
+site_title: Bernard Francis Dillon
+---
+
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ site_title }}</title>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <link rel="stylesheet" href="/css/lightbox.min.css"/>
+        <script src="/js/lightbox-plus-jquery.min.js"></script>
+        <script src="/js/dropdown.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>   
+    <body>
+        <div class="top-banner">
+            <h2 class="banner"><a href="/">{{ site_title }}</a></h2>
+            <div class="dropdown-header">
+                <a href="#" class="dropdown-icon">
+                    <img src="../img/dropdown menu.svg" alt="Dropdown Icon" class="dropdown-image">
+                </a>
+                <a href="#" class="x-icon">
+                    <img src="../img/xmenu.png" alt="Menu close" class="x-menu-image">
+                </a>    
+                <ul class="dropdown-buttons">
+                    <li class="dr-about-button">
+                        <a href="/about/" class="dr-about-button-text">About</a>
+                    </li>
+                    <li class="dr-awards-button">
+                        <a href="/awards/" class="dr-awards-button-text">Awards & Exhibitions</a>
+                    </li> 
+                    <li class="dr-gallery-button">
+                        <a href="/gallery/" class="dr-gallery-button-text"> The Gallery</a>
+                    </li>    
+                    <li class="dr-family-button"> 
+                        <a href="/family/" class="dr-family-button-text">Family Facts</a>
+                    </li> 
+                </ul>                   
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul class="nav-buttons">
+                <li class="about-button">
+                    <a href="/about/" class="about-button-text">About</a>
+                </li>    
+                <li class="awards-button">
+                    <a href="/awards/" class="awards-button-text">Awards & Exhibitions</a>
+                </li>    
+                <li class="gallery-button">
+                    <a href="/gallery/" class="gallery-button-text">The Gallery</a>
+                </li>    
+                <li class="family-button"> 
+                    <a href="/family/" class="family-button-text">Family Facts</a>
+                </li>    
+            </ul>
+        </div>    
+
+            {{ content | safe }}
+        
+        
+        <footer>
+            <div class="footer-section">
+                <p class="footer">All works © Bernard Francis Dillon 2022 | Please do not reproduce without the expressed written consent of Bernard Francis Dillon.</p>
+            </div>    
+        </footer> 
+
+
+
+    </body>     
+</html> 
+

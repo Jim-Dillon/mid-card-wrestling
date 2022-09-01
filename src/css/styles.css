@@ -46,6 +46,20 @@ body {
 
 .x-icon {
     display: none;
+    width: 45px;
+    height: 45px;
+}
+
+.x-menu-image {
+    width: 45px;
+}
+
+.open .x-icon {
+    display: block;
+}
+
+.open .dropdown-icon {
+    display: none;
 }
 
 .topnav-right a {
@@ -103,6 +117,7 @@ body {
 
 .hero-image-container {
     max-width: 944px;
+    /* height: 440px; */
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
@@ -110,7 +125,7 @@ body {
 
 .blog-header-image {
     width: 100%;
-    margin: 87px 0px;
+    margin: 70px 0px;
 }
 
 .text-container {
@@ -148,7 +163,7 @@ p {
 }
 
 .blog-subheading {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .blog-videos {
@@ -200,6 +215,34 @@ b {
     margin-bottom: 50px;
 }
 
+
+/* BLOG PAGE - TOP 10 (PART ONE) */
+
+.blog-t10-img-container {
+    max-width: 944px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 27px;
+}
+
+.blog-t10-hero-container {
+    /* height: 430px; */
+}
+
+.blog-top10-img {
+    width: 100%;
+}
+
+.blog-top10-header {
+    margin-bottom: 30px;
+}
+
+/* BLOG PAGE - TOP 10 (PART TWO) */
+
+.punk-video {
+    height: 470px;
+    width: 100%;
+}
 
 /* Other Blogs*/
 
@@ -265,8 +308,8 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -65px;
-    margin-bottom: 17px;
+    margin-top: -51px;
+    margin-bottom: 0px;
     float: right;
     position: relative;
     z-index: 0.9;
@@ -274,7 +317,7 @@ b {
 }
 
 .al-minute-read {
-    margin-top: -55px;
+    margin-top: -51px;
     margin-bottom: 8px;
 }
 
@@ -323,6 +366,7 @@ b {
     width: 423px;
     height: 183px;  
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .white-card-three {
@@ -440,7 +484,7 @@ b {
 .carousel__nav {
     display: flex;
     justify-content: center;
-    padding: 35px 0;
+    padding: 45px 0;
 }
 
 .carousel__indicator {
@@ -582,7 +626,7 @@ a, a:hover, a:active {
 
 .recent-blogs-section {
     background-color: white;
-    height: 803px;
+    height: 750px;
 }
 
 .recent-blogs-container {
@@ -675,13 +719,7 @@ a, a:hover, a:active {
     margin: 0 auto;
 }
 
-/* .all-blogs-row1, .all-blogs-row2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* overflow: hidden; */
-    /* margin: 5px; */ */
-}
+
 
 .all-blogs-row1 {
     margin-bottom: 41px;
@@ -702,12 +740,21 @@ a, a:hover, a:active {
     border-radius: 15px 15px 0px 0px
 }
 
+.ab-img-one {
+    object-fit: scale-down;
+    background-color: white;
+}
+
 .ab-img-three {
     object-fit: cover;
 }
 
 .ab-card {
     width: 410px;
+}
+
+.ab-minute-read {
+    margin-top: -64px;
 }
 
 .card-one-white {
@@ -717,6 +764,10 @@ a, a:hover, a:active {
     border-radius: 17px;
     border: 2px solid red;
     background-color: white;
+}
+
+.white-card-one {
+    object-fit: scale-down;
 }
 
 .card-two-white {
@@ -768,7 +819,7 @@ a, a:hover, a:active {
 
 .cool-shit-featured-section {
     background-color: #f3f3f3;
-    height: 983px;
+    height: 930px;
     margin-top: -4px;
 }
 
@@ -781,7 +832,8 @@ a, a:hover, a:active {
 
 .cool-shit-video-container {
     margin: 0 auto;
-    margin-top: 27px; 
+    margin: 27px 0px; 
+
 }
 
 .hangman-video {
@@ -790,7 +842,7 @@ a, a:hover, a:active {
 }
 
 .cool-shit-main-section {
-    height: 1198px;
+    height: 1043px;
 }
 
 .cool-shit-main-container {
@@ -798,7 +850,7 @@ a, a:hover, a:active {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 135px;
+    margin-top: 89px;
 }
 
 .cool-shit-row1 {
@@ -818,7 +870,7 @@ a, a:hover, a:active {
 .cool-shit-row2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 .cool-shit-row2-img-container {
@@ -827,7 +879,7 @@ a, a:hover, a:active {
 
 
 .cool-shit-highlights-section {
-    height: 983px;
+    height: 851px;
     background-color: #f3f3f3;
 }
 
@@ -846,8 +898,8 @@ a, a:hover, a:active {
 .highlights-title {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 0px;
-    margin-bottom: 86px;
-    padding-top: 135px;
+    margin-bottom: 56px;
+    padding-top: 66px;
 }
 
 .highlights-img-container {
@@ -1336,33 +1388,49 @@ a, a:hover, a:active {
         display: initial;
         padding-right: 30px;
         margin-top: 5px;
+        position: relative;
     }
 
     .dropdown-buttons {
         padding-left: 0px;
-        padding-top: 50px;
+        padding-top: 74px;
         margin-right: 20px;
-        margin-left: -75px;
-        margin-top: 21.5px;
-        height: 200px;
-        width: 150px;
+        margin-left: -120px;
+        margin-top: 19.5px;
+        height: 255px;
+        width: 170px;
         position: absolute;
         /* display: block; */
         display: none;
-        background-color: rgba(0,0,0,0.95)
+        background-color: #C0EEFF;
+        /* background-color: rgba(0,0,0,0.95) */
+    }
+
+    .dropdown-header.open ul {
+        /* position: relative; */
+        display: block;
+        border: 1px solid black;
     }
 
     .dropdown-buttons li {
-        height: 2rem;
+        height: 2.7rem;
+        padding-top: 11px;
     }
 
+    /* .dropdown-buttons li:hover {
+        background-color: blue;
+    } */
+
     .dropdown-buttons li a {
-        padding: 10px 10px;
+        padding: 10px 61px 10px 22px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: black;
     }
 
     .dropdown-buttons li a:hover {
         color: red;
+        /* background-color: blue; */
     }
 
     .dropdown-icon {
@@ -1372,6 +1440,11 @@ a, a:hover, a:active {
 
     .dropdown-image {
         width: 40px;
+    }
+
+    .x-icon {
+        margin-right: 0px;
+        margin-top: -5px;
     }
 
     .contact-button {
@@ -1422,10 +1495,16 @@ a, a:hover, a:active {
         width: 320px;
     }
 
+    .al-card-two {
+        width: 320px;
+    }
+
     .home-card-two-image {
         object-fit: scale-down;
         background-color: black;
     }
+
+    
 
     .card-three-image {
         object-fit: cover;
@@ -1503,6 +1582,10 @@ a, a:hover, a:active {
     } */
 
     .card-one-image, .home-card-two-image, .card-three-image {
+        width: 255px;
+    }
+
+    .al-card-two {
         width: 255px;
     }
 
@@ -1594,6 +1677,10 @@ a, a:hover, a:active {
     .card-one-image, .home-card-two-image, .card-three-image {
         width: 180px;
         height: 150px;
+    }
+
+    .al-card-two {
+        width: 180px;
     }
 
     .home-card-two-image {
@@ -1693,6 +1780,10 @@ a, a:hover, a:active {
     .card-one-image, .home-card-two-image, .card-three-image {
         width: 300px;
         height: 93px;
+    }
+
+    .al-card-two {
+        width: 300px;
     }
 
     .home-card-two-image {
@@ -1844,7 +1935,7 @@ a, a:hover, a:active {
 
     .cool-shit-section {
         height: 770px;
-        width: 375px;
+        width: 100%;
     }
 
     .cool-shit-container {
@@ -1901,7 +1992,7 @@ a, a:hover, a:active {
     }
 
     .cool-shit-highlights-section {
-        height: 900px;
+        height: 730px;
     }
 
     .cool-shit-highlights-container {
@@ -1920,7 +2011,7 @@ a, a:hover, a:active {
 @media screen and (max-width: 799px) and (min-width: 650px) {
 
     .cool-shit-featured-section {
-        height: 800px;
+        height: 740px;
     }    
 
     .cool-shit-featured-container {
@@ -1970,12 +2061,12 @@ a, a:hover, a:active {
     }
 
     .highlights-title {
-        padding-top: 80px;
-        margin-bottom: 60px;
+        padding-top: 60px;
+        margin-bottom: 50px;
     }
 
     .cool-shit-highlights-section {
-        height: 700px;
+        height: 630px;
     }
 
     .cool-shit-highlights-container {
@@ -2050,12 +2141,12 @@ a, a:hover, a:active {
     }
 
     .highlights-title {
-        padding-top: 70px;
-        margin-bottom: 50px;
+        padding-top: 50px;
+        margin-bottom: 40px;
     }
 
     .cool-shit-highlights-section {
-        height: 650px;
+        height: 580px;
     }
 
     .cool-shit-highlights-container {
@@ -2130,12 +2221,12 @@ a, a:hover, a:active {
     }
 
     .highlights-title {
-        padding-top: 60px;
+        padding-top: 40px;
         margin-bottom: 40px;
     }
 
     .cool-shit-highlights-section {
-        height: 600px;
+        height: 540px;
     }
 
     .cool-shit-highlights-container {
@@ -2224,7 +2315,7 @@ a, a:hover, a:active {
     }
 
     .highlights-title {
-        padding-top: 60px;
+        padding-top: 40px;
         margin-bottom: 40px;
     }
 
@@ -2601,7 +2692,7 @@ a, a:hover, a:active {
 
     .white-blog-card-img {
         width: 346px;
-        object-fit: cover;
+        object-fit: scale-down;
     }
 
     .card-two-image {
@@ -2614,8 +2705,9 @@ a, a:hover, a:active {
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down; */
+        /* background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -2667,8 +2759,8 @@ a, a:hover, a:active {
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* background-color: rgba(0, 0, 0, 0.85) */
     }
 }
 
@@ -2691,7 +2783,7 @@ a, a:hover, a:active {
 
     .white-blog-card-img {
         width: 293px;
-        object-fit: cover;
+        object-fit: scale-down;
     }
 
     .card-two-image {
@@ -2704,8 +2796,9 @@ a, a:hover, a:active {
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -2760,12 +2853,12 @@ a, a:hover, a:active {
     }
 
     .ab-img-one {
-        object-fit: cover
+        object-fit: scale-down;
+        background-color: white;
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
     }
 
 }
@@ -2808,7 +2901,7 @@ a, a:hover, a:active {
 
     .white-blog-card-img {
         width: 343px;
-        object-fit: cover;
+        object-fit: scale-down;
     }
 
     .card-two-image {
@@ -2822,8 +2915,9 @@ a, a:hover, a:active {
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -2886,12 +2980,12 @@ a, a:hover, a:active {
     }
 
     .ab-img-one {
-        object-fit: cover
+        object-fit: scale-down;
+        background-color: white;
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
     }
 }
 
@@ -2932,7 +3026,7 @@ a, a:hover, a:active {
 
     .white-blog-card-img {
         width: 272px;
-        object-fit: cover;
+        object-fit: scale-down;
     }
 
     .card-two-image {
@@ -2946,8 +3040,9 @@ a, a:hover, a:active {
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -3015,12 +3110,11 @@ a, a:hover, a:active {
     }
 
     .ab-img-one {
-        object-fit: cover
+        object-fit: scale-down
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
     }
 }
 
@@ -3060,13 +3154,16 @@ a, a:hover, a:active {
     }
 
     .white-blog-card-img {
-        width: 211px;
-        object-fit: cover;
+        width: 210px;
+        height: 150px;
+        object-fit: scale-down;
     }
 
     .card-two-image {
         object-fit: scale-down;
-        background-color: black
+        background-color: black;
+        height: 150px;
+        
     }
 
     .al-card-img {
@@ -3077,8 +3174,9 @@ a, a:hover, a:active {
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -3128,6 +3226,7 @@ a, a:hover, a:active {
 
     .all-blogs-img {
         width: 214px;
+        height: 150px;
     }
 
     .ab-minute-read {
@@ -3144,12 +3243,12 @@ a, a:hover, a:active {
     }
 
     .ab-img-one {
-        object-fit: cover
+        object-fit: scale-down;
+        background-color: white;
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
     }
 }
 
@@ -3184,17 +3283,20 @@ a, a:hover, a:active {
 
     .white-blog-card-img {
         width: 346px;
-        object-fit: cover;
+        height: 183px;
+        object-fit: scale-down;
     }
 
     .card-two-image {
         object-fit: scale-down;
-        background-color: black
+        background-color: black;
+        height: 93px;
     }
 
     .white-card-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
     }
 
     .blog-card-content {
@@ -3244,6 +3346,7 @@ a, a:hover, a:active {
 
     .all-blogs-img {
         width: 350px;
+        height: 183px;
     }
 
     .ab-minute-read {
@@ -3255,12 +3358,12 @@ a, a:hover, a:active {
     }
 
     .ab-img-one {
-        object-fit: cover
+        object-fit: scale-down;
+        background-color: white;
     }
 
     .ab-img-three {
-        object-fit: scale-down;
-        background-color: rgba(0, 0, 0, 0.85)
+        object-fit: cover;
     }
 }
 
