@@ -1,0 +1,3522 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* FONTS */
+
+    h1 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0px 0px 25px 0px;
+        font-weight: 600; 
+        font-size: 32;
+        line-height: 46px;
+    }
+
+    h3 {
+        text-decoration: underline;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 650;
+        margin: 0px 0px 0px 0px; 
+    }
+
+    h4 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 25px 0px 25px 0px; 
+    }
+
+    p {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 0.5px; 
+        line-height: 26px;
+        font-size: 18px;
+    }
+
+    b {
+        font-weight: 600;
+    }
+    
+    .align-center {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: red;
+        text-align: center;
+    }
+    
+    .align-left {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: red;
+        padding-top: 85px; 
+        padding-bottom: 22px;
+        padding-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+
+/* NAV BAR */ 
+
+/* Original Full-screen */
+
+    .topnav {
+        background-color: black;
+        height: 81px;
+        width: 100%;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+    }
+
+    .nav-wrapper {
+        max-width: 1300px;
+        margin: 0 auto; 
+        padding: 1rem 0rem 65px;
+    }
+
+    .logo {
+        float: left;
+        height: 60px;
+        position: absolute;
+        top: 6.5px;
+        padding-left: 64px;
+    }
+
+    .dropdown-header {
+        float: right;
+        display: none;
+    }
+
+    .dropdown-icon {
+        display: none;
+    }
+
+    .x-icon {
+        display: none;
+        width: 45px;
+        height: 45px;
+    }
+
+    .x-menu-image {
+        width: 45px;
+    }
+
+    .open .x-icon {
+        display: block;
+    }
+
+    .open .dropdown-icon {
+        display: none;
+    }
+
+    .topnav-right a {
+        float: left;
+        text-align: center;
+        padding: 6px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 2px;
+        color: white;
+    }  
+    
+    .topnav-right {
+        float: right;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 2px; 
+        margin-top: 0px;
+        padding-top: 8px;
+        padding-right: 64px;
+    }
+
+    .dropdown-buttons {
+        list-style: none;
+    }
+
+    .dropdown-buttons li a {
+        color: white;
+    }
+
+    .blog-button {
+        height: 100%;
+    }
+
+    .cool-shit-button {
+        height: 100%;
+    }
+
+    .trumps-button {
+        height: 100%;
+        padding: 6px 16px;
+    }
+
+    .contact-button {
+        background-color: red;
+        border-radius: 6px;
+        height: 35px;
+    }
+
+
+
+/* Small Laptop View */
+
+@media screen and (max-width: 699px) and (min-width: 600px) {
+
+    .logo {
+        padding-left: 45px;
+        padding-top: 5px;
+        height: 58px;
+    }
+
+    .logo a img {
+        height: 58px;
+    }
+
+    .topnav-right {
+        padding-right: 45px;
+    }
+
+    .topnav-right a {
+        font-size: 16px;
+    }
+}
+
+/* Tiny Laptop & Mobile View */
+
+@media screen and (max-width: 599px) {
+
+    .topnav-right {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 35px;
+    }
+
+    .dropdown-header {
+        display: initial;
+        padding-right: 30px;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .dropdown-buttons {
+        padding-left: 0px;
+        padding-top: 74px;
+        margin-right: 20px;
+        margin-left: -120px;
+        margin-top: 19.5px;
+        height: 255px;
+        width: 170px;
+        position: absolute;
+        display: none;
+        background-color: #C0EEFF;
+    }
+
+    .dropdown-header.open ul {
+        display: block;
+        border: 1px solid black;
+    }
+
+    .dropdown-buttons li {
+        height: 2.7rem;
+        padding-top: 11px;
+    }
+
+    .dropdown-buttons li a {
+        padding: 10px 61px 10px 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+
+    .dropdown-buttons li a:hover {
+        color: red;
+    }
+
+    .dropdown-icon {
+        display: initial; 
+        padding-left: 30px;
+    }
+
+    .dropdown-image {
+        width: 40px;
+    }
+
+    .x-icon {
+        margin-right: 0px;
+        margin-top: -5px;
+    }
+
+    .contact-button {
+        background-color: initial;
+    }
+}
+
+
+/* FOOTER */
+
+/* Original Full-Screen */
+
+    .footer {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        color: white;
+        height: 290px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 10px;
+        padding: 50px 0px;
+        line-height: 2;
+    }
+
+    .footer-section {
+        background-color: black;
+    }
+
+    .footer-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .footer-column-1 {
+        display: flex;
+    }
+
+    .footer-column-2 {
+        display: flex;
+        width: 469px;
+    }
+
+    .footer-heading {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+    }
+
+    .contact-methods {
+        list-style: none;
+        margin-top: 0px;
+    }
+
+    .contact-me {
+        color: #00AAE8;
+    }
+
+    .general-footer-links {
+        list-style: none;
+        margin-top: 0px;
+    }
+
+    .footer-4 {
+        margin-right: 1rem;
+    }
+
+    .social-icons {
+        list-style: none;
+        color: white;
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .social-icons-row-1, .social-icons-row-2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons-body {
+        list-style: none;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 220px;
+        margin: 0 auto;
+        padding: 0px;
+        margin-bottom: 82px;
+    }
+
+    a, a:hover, a:active { 
+        color: white;
+        text-decoration: none; 
+    }
+
+    .Twitter-icon {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .facebook-icon {
+        padding-left: 19px;
+    }
+
+    .linkedin-icon {
+        padding-left: 19px;    
+    }
+
+    .instagram-icon {
+        padding-left: 19px;    
+    }
+
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 962px) and (min-width: 700px) {
+
+    .footer-heading {
+        margin-right: 1rem;
+    }
+
+    .footer-logo {
+        margin-right: 0px;
+    }
+
+    .contact-methods, .general-footer-links {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        height: 129px;
+        padding-left: 20px;
+    }
+
+    .social-logos {
+        width: 35px;
+    }
+
+    .facebook-icon, .linkedin-icon, .instagram-icon {
+        padding-left: 10px;
+    }
+
+    .footer-2 {
+        width: 150px;
+    }
+}
+
+
+/* Small Laptop View */
+
+@media screen and (max-width: 699px) and (min-width: 600px) {
+
+    .footer-column-1, .footer-column-2 {
+        display: initial;
+    }
+
+    .footer-logo {
+        padding-left: 25px;
+    }
+
+    .contact-methods, .general-footer-links {
+        padding-left: 30px;
+        font-size: 14px;
+    }    
+
+    .footer-2 {
+        margin-top: 10px;
+    }
+
+    .footer-column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 240px;
+    }
+
+    .social-icons {
+        padding-left: 20px;
+    }
+
+    .social-logos {
+        width: 35px;
+    }
+
+    .facebook-icon, .linkedin-icon, .instagram-icon {
+        padding-left: 10px;
+    }
+}
+
+
+/* Tiny Laptop View */
+
+@media screen and (max-width: 599px) and (min-width: 451px) {
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        height: 300px;
+    }
+
+    .footer-column-1, .footer-column-2 {
+        display: initial;
+    }
+
+    .footer-heading {
+        margin-right: 2rem;
+    }
+
+    .general-footer-links, .social-icons {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .footer-logo {
+        padding-left: 10px;
+    }
+
+    .footer-2 {
+        margin-top: 10px;
+    }
+
+    .contact-methods {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .footer-column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 160px;
+        height: 250px;
+    }
+
+    .social-logos {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .footer-4 {
+        margin-top: 10px;
+    }
+
+    .social-icons-row-1, .social-icons-row-2 {
+        display: initial;
+    }
+
+    .facebook-icon {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .linkedin-icon, .instagram-icon {
+        padding-left: 20px;
+    } 
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width: 450px) {
+    
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        height: 300px;
+    }
+
+    .footer-column-1, .footer-column-2 {
+        display: initial;
+    }
+
+    .footer-heading {
+        margin-right: 2rem;
+    }
+
+    .general-footer-links, .social-icons {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .footer-logo {
+        padding-left: 10px;
+    }
+
+    .footer-2 {
+        margin-top: 10px;
+    }
+
+    .contact-methods {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .footer-column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 250px;
+    }
+
+    .social-logos {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .footer-4 {
+        margin-top: 10px;
+    }
+
+    .social-icons-row-1, .social-icons-row-2 {
+        display: initial;
+    }
+
+    .facebook-icon {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .linkedin-icon, .instagram-icon {
+        padding-left: 20px;
+    } 
+}
+
+
+/* HOME PAGE */
+
+    .home-image-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .homepage-hero {
+        width: 100%;
+    }
+
+    .recent-blogs-section {
+        background-color: white;
+        height: 750px;
+    }
+
+    .recent-blogs-container {
+        max-width: 872px;
+        margin: 0 auto;
+    }
+
+    .recent-blogs-title {
+        padding-bottom: 30px;
+    }
+
+    .cool-shit-section {
+        background-color: #f3f3f3;
+        height: 699px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .cool-shit-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .cool-shit-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cool-shit-words {
+        max-width: 427px;
+        padding-top: 17px;
+    }
+
+    .cool-title-1 {
+        text-decoration: none;
+    }
+
+    .cool-shit-second-para {
+        margin-bottom: 30px;
+    }
+
+    .see-more-button {
+        color: red;    
+        border: 2px solid red;
+        border-radius: 6px;
+        height: 39px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 932px) and (min-width: 770px) {
+
+    .recent-blogs-section {
+        height: 690px;
+    }
+
+    .recent-blogs-container {
+        width: 666px;
+    }
+
+    .recent-blogs-title {
+        font-size: 28px;
+        padding-top: 60px;
+    }   
+
+    .cool-shit-content {
+        width: 750px;
+    }
+
+    .cool-shit-image {
+        width: 400px;
+    }
+
+    .cool-shit-words {
+        width: 300px;
+    }
+}
+
+/* Small Laptop View */
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .recent-blogs-section {
+        height: 600px;
+    }
+
+    .recent-blogs-container {
+        width: 524px;
+        height: 480px;
+    }
+
+    .recent-blogs-title {
+        font-size: 26px;
+        padding-top: 50px;
+    }  
+
+    .cool-shit-section {
+        height: 770px;
+    }
+
+    .cool-shit-container {
+        width: 440px;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+    }
+
+    .cool-shit-words {
+        width: 417px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Tiny Laptop View */
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .recent-blogs-section {
+        height: 563px;
+    }
+
+    .recent-blogs-container {
+        width: 392px;
+        height: 480px;
+    }
+
+    .recent-blogs-title {
+        font-size: 26px;
+        padding-top: 50px;
+    }     
+    
+    .cool-shit-section {
+        height: 770px;
+    }
+
+    .cool-shit-container {
+        width: 414px;
+    }
+
+    .cool-shit-content {
+        display: initial;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+    }
+
+    .cool-shit-image {
+        width: 400px;
+    }
+
+    .cool-shit-words {
+        width: 415px;
+        padding-left: 10px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+
+    .recent-blogs-section {
+        height: 680px;
+    }
+
+    .recent-blogs-container {
+        width: 375px;
+        height: 680px;
+    }
+
+    .recent-blogs-title {
+        font-size: 24px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+        width: 300px;
+        margin: 0 auto;
+    }  
+
+    .cool-shit-section {
+        height: 730px;
+        width: 100%;
+    }
+
+    .cool-shit-container {
+        width: 369px;
+    }
+
+    .cool-shit-content {
+        display: initial;
+        width: 375px;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+        font-size: 24px;
+    }
+
+    .cool-shit-image {
+        width: 344px;
+    }
+
+    .cool-shit-words {
+        width: 355px;
+        padding-left: 10px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* CAROUSEL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOG PAGE - Love Wrestling */
+
+.hero-image-container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.blog-header-image {
+    width: 100%;
+    margin: 70px 0px;
+}
+
+.text-container {
+    max-width: 944px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.blog-subheading {
+    margin-top: 25px;
+}
+
+.blog-videos {
+    width: 100%;
+    height: 515px;
+}
+
+.future-wrestlers {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5px; 
+    line-height: 1.5;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.question {
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.about-border {
+    display: block;
+    border: 1px solid #00AAE8;
+    margin-top: 67px;
+    margin-bottom: 50px;
+}
+
+
+/* BLOG PAGE - TOP 10 (PART ONE) */
+
+.blog-t10-img-container {
+    max-width: 944px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 27px;
+}
+
+.blog-top10-img {
+    width: 100%;
+}
+
+.blog-top10-header {
+    margin-bottom: 30px;
+}
+
+/* BLOG PAGE - TOP 10 (PART TWO) */
+
+.punk-video {
+    height: 470px;
+    width: 100%;
+}
+
+/* Other Blogs*/
+
+.other-blogs-section {
+    background-color: #f3f3f3;
+    height: 753px;
+}
+
+.other-blogs-container {
+    max-width: 875px;
+    margin: 0 auto;
+}
+
+.other-blogs {
+    display: flex; 
+    justify-content: space-between; 
+    overflow: hidden;  
+    margin: 5px;
+}
+
+.card-one {
+    width: 423px;
+    height: 425px;
+    background-color: #C0EEFF;
+    border-radius: 1rem;
+}
+
+.al-card-img {
+    object-fit: cover;
+    background-color: none;
+}
+
+.card-one-image {
+    width: 423px;
+    height: 183px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.also-like-card-content {
+    padding: 26px 32px;
+}
+
+.image-outline {
+    border-radius: 1rem 1rem 0px 0px;
+    border: 2px solid #C0EEFF;
+    object-fit: scale-down;
+    background-color: white;
+}
+
+.blog-card-content, .white-card-content {
+    padding: 41px 38px;
+}
+
+.home-blog-card-content {
+    padding: 25px 20px;
+}
+
+.minute-read-container {
+    background-color: white;
+    width: 139px;
+    height: 40px;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -51px;
+    margin-bottom: 0px;
+    float: right;
+    position: relative;
+    z-index: 0.9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+.al-minute-read {
+    margin-top: -51px;
+    margin-bottom: 8px;
+}
+
+
+.card-title-1 {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.read-more-button {
+    background-color: red;
+    border-radius: 6px;
+    height: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 6px 16px;
+}
+
+.card-two {
+    width: 427px;
+    height: 425px;
+    background-color: #C0EEFF;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.card-two-image, .home-card-two-image {
+    width: 423px;
+    height: 183px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.card-three {
+    width: 427px;
+    height: 425px;
+    background-color: #C0EEFF;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.card-three-image {
+    width: 423px;
+    height: 183px;  
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.white-card-three {
+    object-fit: cover;
+}
+
+.card-four {
+    width: 427px;
+    height: 425px;
+    background-color: #C0EEFF;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.card-four-image {
+    width: 427px;
+    height: 183px; 
+}
+
+.arrow-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    margin-top: 4rem;
+}
+
+.arrow-circles {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.big-scroll-button {
+    margin: 0.25rem;
+    width: 24px;
+    height: 24px;
+}
+
+.small-scroll-button-1 {
+    margin: 0.25rem;
+    width: 16px;
+    height: 16px;
+}
+
+.small-scroll-button-2 {
+    margin: 0.25rem;
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Other Blogs Carousel*/
+
+.carousel {
+    position: relative;
+    height: 425px;
+    /* width: 423px; */
+    width: 856px;
+    margin: 0 auto;
+}
+
+.carousel__cards {
+    width: 423px;
+    margin-left: 0;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__button img {
+    width: 12px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: red;
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+
+
+/* BLOG LISTING PAGE */
+
+.blog-listing-image-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.blog-listing-image-hero {
+    width: 100%;
+}
+
+.featured-posts-section {
+    background-color: #f3f3f3;
+    height: 672px;
+}
+
+.featured-posts-container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.ab-title {
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+.all-blogs-section {
+    background-color: white;
+    height: 1162px;
+}
+
+.all-blogs-container {
+    max-width: 1278px;
+    margin: 0 auto;
+}
+
+
+
+.all-blogs-row1 {
+    margin-bottom: 41px;
+}
+
+.all-blogs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1269px;
+    height: 885px;
+    margin: 5px;
+}
+
+.all-blogs-img {
+    width: 410px;
+    height: 183px;
+    border-radius: 15px 15px 0px 0px
+}
+
+.ab-img-one {
+    object-fit: scale-down;
+    background-color: white;
+}
+
+.ab-img-three {
+    object-fit: cover;
+}
+
+.ab-card {
+    width: 410px;
+}
+
+.ab-minute-read {
+    margin-top: -64px;
+}
+
+.card-one-white {
+    width: 427px;
+    height: 430px;
+    margin-right: 2px;
+    border-radius: 17px;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.white-card-one {
+    object-fit: scale-down;
+}
+
+.card-two-white {
+    width: 427px;
+    height: 430px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 17px;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.card-three-white {
+    width: 427px;
+    height: 430px;
+    margin-left: 2px;
+    border-radius: 17px;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.minute-read-container-blue {
+    background-color: #C0EEFF;
+    width: 139px;
+    height: 40px;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+    margin-bottom: 17px;
+    float: right;
+    position: relative;
+    z-index: 0.9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+/* COOL SHIT PAGE */
+
+.cool-shit-hero-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cool-shit-hero-image {
+    width: 100%;
+}
+
+.cool-shit-featured-section {
+    background-color: #f3f3f3;
+    height: 930px;
+    margin-top: -4px;
+}
+
+.cool-shit-featured-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cool-shit-video-container {
+    margin: 0 auto;
+    margin: 27px 0px; 
+
+}
+
+.hangman-video {
+    width: 100%;
+    height: 550px;
+}
+
+.cool-shit-main-section {
+    height: 1043px;
+}
+
+.cool-shit-main-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 89px;
+}
+
+.cool-shit-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cool-shit-row1-img-container {
+    padding-right: 65px;
+}
+
+.cool-shit-titles {
+    margin-top: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cool-shit-row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.cool-shit-row2-img-container {
+    padding-left: 65px;
+}
+
+
+.cool-shit-highlights-section {
+    height: 851px;
+    background-color: #f3f3f3;
+}
+
+.cool-shit-highlights-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.cool-shit-highlights-container {
+    max-width: 940px;
+}
+
+.highlights-title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 56px;
+    padding-top: 66px;
+}
+
+.highlights-img-container {
+    max-width: 930px;
+}
+
+.highlights-img {
+    max-width: 920px;
+}
+
+
+
+/* TOP TRUMPS */
+
+.top-trumps-image-container {
+    max-width: 1440px;
+    /* height: 402px; */
+    margin: 0 auto;
+}
+
+.top-trumps-hero {
+    width: 100%;
+    /* height: 402px; */
+}
+
+.game-cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.game-title {
+    text-align: center;
+    font-family: 'American Captain', sans-serif;
+    font-size: 50px;
+}
+
+
+.card-container {
+    width: 257px;
+    height: 360px;
+    background-color: #FF0000;
+    border-radius: 8px;
+    padding: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-content {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 239px;
+}
+
+.card-image-container {
+    margin: 0 auto;
+    height: 266px;
+    width: 233px;
+}
+
+.card-image {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card-info-container {
+    height: 68px;
+    background-color: #808080;
+    width: 233px;
+    margin: 0 auto;
+    border-radius: 0px 0px 7px 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+
+.card-text {
+    font-family: 'American Captain', sans-serif;
+    color: white;
+    font-size: 28px;
+    width: 113px;
+}
+
+.card-ovr {
+    font-family: 'American Captain', sans-serif;
+    color: white;
+    font-size: 52px;
+    height: 42px;
+    padding-top: 4px;
+}
+
+.winner-container {
+    margin-top: 200px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 220px;
+}
+
+.winner-text {
+    text-align: center;
+    font-family: 'American Captain', sans-serif;
+    font-size: 40px;
+}
+
+.winner {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'American Captain', sans-serif;
+    font-size: 50px;
+    color: red;
+    margin-top: 10px;
+}
+
+.game-buttons-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-buttons {
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: #C0EEFF;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.game-buttons:hover {
+    background-color: black;
+    color: #C0EEFF;
+}
+
+.ready-button {
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: #C0EEFF;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.grey-button {
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #808080;
+    background-color: #E5E5E5;
+    border: 2px solid #C4C4C4;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL */
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 932px) and (min-width: 770px) {
+
+    .carousel {
+        width: 650px;
+        height: 390px;
+    }
+
+    .carousel__cards {
+        width: 320px;
+    }
+
+    .card-one, .card-two, .card-three {
+        height: 390px;
+    }
+
+    .card-one-image, .home-card-two-image, .card-three-image {
+        width: 320px;
+    }
+
+    .al-card-two {
+        width: 320px;
+    }
+
+    .home-card-two-image {
+        object-fit: scale-down;
+        background-color: black;
+    }
+
+    .card-three-image {
+        object-fit: cover;
+    }
+
+    .card-title-1 {
+        font-size: 19px;
+    }
+
+    .card-words p {
+        font-size: 13px;
+    }
+
+    .minute-read-container {
+        width: 125px;
+        height: 34px;
+        font-size: 16px;
+        margin-top: -46px;
+        margin-bottom: 8px;
+    }
+
+    .read-more-button {
+        font-size: 16px;
+    }
+
+    .carousel__indicator {
+        width: 13px;
+        height: 13px;
+    }
+
+    .carousel__indicator.current-slide {
+        width: 22px;
+        height: 22px;
+    }
+
+}
+
+
+/* CAROUSEL */
+
+/* Small Laptop View */
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .carousel {
+        width: 520px;
+        height: 410px;   
+    }
+
+    .carousel__cards {
+        width: 255px;
+    }
+
+    .card-one, .card-two, .card-three {
+        height: 380px;
+    }
+
+    .card-one-image, .home-card-two-image, .card-three-image {
+        width: 255px;
+    }
+
+    .al-card-two {
+        width: 255px;
+    }
+
+    .home-card-two-image {
+        object-fit: scale-down;
+        background-color: black;
+    }
+
+    .card-three-image {
+        object-fit: scale-down;
+        background-color: rgba(8, 122, 163, 0.1);
+    }
+
+    .card-title-1 {
+        font-size: 15px;
+    }
+
+    .card-words p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .minute-read-container {
+        width: 110px;
+        height: 27px;
+        font-size: 14px;
+        margin-top: -39px;
+    }
+
+    .read-more-button {
+        font-size: 14px;
+    }
+
+    .carousel__indicator {
+        width: 13px;
+        height: 13px;
+    }
+
+    .carousel__indicator.current-slide {
+        width: 22px;
+        height: 22px;
+    }
+
+    .carousel__nav {
+        padding: 20px 0px;
+    }
+}
+
+
+
+
+/* CAROUSEL */
+
+/* Tiny Laptop View */
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .carousel {
+        width: 374px;
+        height: 370px;   
+    }
+
+    .carousel__cards {
+        width: 180px;
+    }
+
+    .card-one, .card-two, .card-three {
+        height: 342px;
+    }
+
+    .home-blog-card-content {
+        padding: 20px 20px;
+    }
+
+    .card-one-image, .home-card-two-image, .card-three-image {
+        width: 180px;
+        height: 150px;
+    }
+
+    .al-card-two {
+        width: 180px;
+    }
+
+    .home-card-two-image {
+        object-fit: scale-down;
+        background-color: black;
+    }
+
+    .card-three-image {
+        object-fit: cover;
+    }
+
+    .card-title-1 {
+        font-size: 14px;
+    }
+
+    .card-words p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .minute-read-container {
+        width: 85px;
+        height: 22px;
+        font-size: 10px;
+        margin-top: -35px;
+        margin-bottom: 8px;
+    }
+
+    .read-more-button {
+        font-size: 14px;
+    }
+
+    .carousel__indicator {
+        width: 11px;
+        height: 11px;
+    }
+
+    .carousel__indicator.current-slide {
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel__nav {
+        padding: 20px 0px;
+    } 
+}
+
+
+
+
+/* CAROUSEL */
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+
+    .carousel {
+        width: 300px;
+        height: 495px;   
+    }
+
+    .slide-row {
+        display: initial;
+    }
+
+    .carousel__cards {
+        width: 300px;
+    }
+
+    .card-one, .card-two, .card-three {
+        height: 234px;
+    }
+
+    .carousel__cards {
+        margin-bottom: 8px;
+    }
+
+    .home-blog-card-content {
+        padding: 17px 20px;
+    }
+
+    .card-one-image, .home-card-two-image, .card-three-image {
+        width: 300px;
+        height: 93px;
+    }
+
+    .al-card-two {
+        width: 300px;
+    }
+
+    .home-card-two-image {
+        object-fit: cover;
+        background-color: black;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .card-three-image {
+        object-fit: cover;
+    }
+
+    .card-title-1 {
+        font-size: 14px;
+    }
+
+    .card-words p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .home-card-words p {
+        line-height: 16px;
+    }
+
+    .minute-read-container {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: -33px;
+        margin-bottom: 0px;
+    }
+
+    .read-more-button {
+        font-size: 12px;
+        padding: 8px 23px;
+    }
+
+    .carousel__indicator {
+        width: 11px;
+        height: 11px;
+    }
+
+    .carousel__indicator.current-slide {
+        width: 20px;
+        height: 20px;
+    }
+
+    .carousel__nav {
+        padding: 20px 0px;
+    }  
+
+    .carousel__button {
+        top: 48.5%;
+    }
+
+    .carousel__button--right {
+        right: -35px;
+    }
+
+    .carousel__button--left {
+        left: -35px;
+    }
+}
+
+
+
+
+
+
+/* COOL SHIT PAGE */
+
+/* Large Laptop View */
+
+@media screen and (max-width: 950px) and (min-width: 800px) {
+
+    .cool-shit-featured-section {
+        height: 820px;
+    }
+
+    .cool-shit-featured-container {
+        width: 780px;
+    }
+
+    .featured-posts-title {
+        padding-top: 60px;
+    }
+
+    .hangman-video {
+        height: 450px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 730px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 770px;
+    }
+
+    .highlights-img-container {
+        width: 750px;
+    }
+
+    .highlights-img {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 650px) {
+
+    .cool-shit-featured-section {
+        height: 740px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 630px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 50px;
+    }
+    
+    .hangman-video {
+        height: 360px;
+    }
+
+    .cool-shit-main-section {
+        height: 1000px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 40px;
+    }
+
+    .cool-shit-row1-img {
+        width: 380px;
+    }
+
+    .cool-shit-titles {
+        font-size: 22px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 120px;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 40px;
+    }
+
+    .cool-shit-row2-img {
+        width: 370px;
+    }
+
+    .highlights-title {
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 630px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 630px;
+    }
+
+    .highlights-img-container {
+        width: 610px;
+    }
+
+    .highlights-img {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 649px) and (min-width: 550px) {
+
+    .cool-shit-featured-section {
+        height: 665px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 510px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    
+    .hangman-video {
+        height: 290px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 430px;
+    }
+
+    .cool-shit-main-section {
+        height: 1426px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 417px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 100px;
+        /* display: initial; */
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .highlights-title {
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 580px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 530px;
+    }
+
+    .highlights-img-container {
+        width: 510px;
+    }
+
+    .highlights-img {
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 549px) and (min-width: 450px) {
+
+    .cool-shit-featured-section {
+        height: 625px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 430px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 30px;
+        padding-bottom: 8px;
+    }
+    
+    .hangman-video {
+        height: 245px;
+    }   
+    
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 430px;
+    }
+
+    .cool-shit-main-section {
+        height: 1426px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 417px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 100px;
+        /* display: initial; */
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .highlights-title {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 540px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 440px;
+    }
+
+    .highlights-img-container {
+        width: 420px;
+    }
+
+    .highlights-img {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+
+    .cool-shit-featured-section {
+        height: 625px;   
+    }    
+
+    .cool-shit-featured-container {
+        width: 368px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 30px;
+        padding-bottom: 8px;
+    }
+
+    .cool-shit-video-container {
+        margin-top: 20px;
+    }
+    
+    .hangman-video {
+        height: 205px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 370px;
+    }
+
+    .cool-shit-main-section {
+        height: 1283px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 340px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-img {
+        width: 340px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 340px;
+    }
+
+    .cool-shit-row2 {
+        width: 346px;
+        margin-top: 60px;
+        /* display: initial; */
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+        width: 346px;
+    }
+
+    .cool-shit-row2-img {
+        width: 346px;
+    }
+
+    .highlights-title {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 510px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 375px;
+    }
+
+    .highlights-img-container {
+        width: 355px;
+    }
+
+    .highlights-img {
+        width: 355px;
+    }
+}
+
+
+/* TOP TRUMPS */
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 800px) and (min-width: 650px) {
+
+    .game-title {
+        font-size: 44px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .game-you-conatiner {
+        width: 235px;
+    }
+
+    .back-card {
+        width: 235px;
+    }
+
+    .card-container {
+        width: 235px;
+        height: 334px;
+    }
+
+    .card-image-container {
+        width: 208px;
+        height: 237px;
+    }
+
+    .card-content {
+        width: 214px;
+        height: 311px;
+    }
+
+    .card-image {
+        width: 208px;
+    }
+
+    .card-info-container {
+        width: 208px;
+    }
+
+    .winner-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 150px;
+        margin-top: 160px;
+    }
+
+    .winner {
+        font-size: 33px;
+    }
+
+    .game-buttons-container {
+        width: 360px;
+    }
+
+    .game-computer-container {
+        width: 235px;
+    }
+
+    .grey-button, .ready-button {
+        font-size: 20px;
+    }
+}
+
+/* Small Laptop View */
+
+@media screen and (max-width: 649px) and (min-width: 550px) {
+
+    .game-title {
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .game-you-conatiner {
+        width: 205px;
+    }
+
+    .back-card {
+        width: 205px;
+    }
+
+    .card-container {
+        width: 205px;
+        height: 299px;
+    }
+
+    .card-image-container {
+        width: 180px;
+        height: 205px;
+    }
+
+    .card-content {
+        width: 186px;
+        height: 279px;
+    }
+
+    .card-image {
+        width: 180px;
+    }
+
+    .card-info-container {
+        width: 180px;
+    }
+
+    .card-text {
+        font-size: 26px;
+    }
+
+    .card-ovr {
+        font-size: 45px;
+    }
+
+    .winner-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 120px;
+        margin-top: 160px;
+    }
+
+    .winner-text {
+        font-size: 35px;
+    }
+
+    .winner {
+        font-size: 30px;
+    }
+
+    .game-buttons-container {
+        width: 320px;
+    }
+
+    .game-computer-container {
+        width: 205px;
+    }
+
+    .grey-button, .ready-button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 549px) and (min-width: 450px) {
+
+    .game-title {
+        font-size: 35px;
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+
+    .game-you-conatiner {
+        width: 169px;
+    }
+
+    .back-card {
+        width: 170px;
+    }
+
+    .card-container {
+        width: 170px;
+        height: 246px;
+    }
+
+    .card-image-container {
+        width: 145px;
+        height: 165px;
+    }
+
+    .card-content {
+        width: 151px;
+        height: 227px;
+    }
+
+    .card-image {
+        width: 145px;
+    }
+
+    .card-info-container {
+        width: 145px;
+        height: 56px;
+    }
+
+    .card-text {
+        font-size: 20px;
+        width: 85px;
+    }
+
+    .card-ovr {
+        font-size: 40px;
+        padding-top: 4px;
+    }
+
+    .winner-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90px;
+        margin-top: 150px;
+    }
+
+    .winner-text {
+        font-size: 28px;
+    }
+
+    .winner {
+        font-size: 22px;
+    }
+
+    .game-buttons-container {
+        width: 260px;
+    }
+
+    .game-computer-container {
+        width: 169px;
+    }
+
+    .grey-button, .ready-button {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 449px) {
+
+    .game-cards-container {
+        display: initial;
+    }
+
+    .game-title {
+        font-size: 25px;
+        margin-top: 17px;
+        margin-bottom: 7px;
+        width: 158px;
+    }
+
+    .game-you-conatiner {
+        width: 169px;
+    }
+
+    .you-back-card-container, .comp-back-card-container {
+        margin-left: 10px;
+    }
+
+    .back-card {
+        width: 140px;
+    }
+
+    .card-container {
+        width: 140px;
+        height: 193px;
+        margin-left: 10px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .card-image-container {
+        width: 121px;
+        height: 134px;
+    }
+
+    .card-content {
+        width: 127px;
+        height: 178px;
+        border-radius: 5px;
+    }
+
+    .card-image {
+        width: 121px;
+        border-radius: 2px 2px 0px 0px;
+    }
+
+    .card-info-container {
+        width: 121px;
+        height: 38px;
+        padding-top: 5px;
+        border-radius: 0px 0px 2px 2px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        width: 60px;
+        padding-top: 5px;
+    }
+
+    .card-ovr {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+    .winner-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100px;
+        margin-top: 0px;
+        margin-right: 30px;
+        /* margin-bottom: 30px; */
+        float: right;
+    }
+
+    .winner-text {
+        font-size: 28px;
+    }
+
+    .winner {
+        font-size: 30px;
+    }
+
+    .game-buttons-container {
+        width: 350px;
+        margin-top: 30px;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .game-computer-container {
+        width: 169px;
+        margin-top: 17px;
+    }
+
+    .play-game-button, .next-hand-button {
+        text-align: center;
+        width: 175px;
+    }
+
+    .grey-button, .ready-button {
+        font-size: 10px;
+        padding: 20px 52px;
+    }
+
+}
+
+
+
+
+/* BLOG LISTING PAGE */
+
+/* X Large Laptop View  */
+
+@media screen and (max-width: 1300px) and (min-width: 1100px) {
+
+    .featured-title {
+        padding-top: 65px;
+    }
+
+    .featured-posts-container {
+        width: 1080px;
+    }
+
+    .white-blog-card {
+        width: 350px;
+    }
+
+    .white-blog-card-img {
+        width: 346px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black
+    }
+
+    .al-card-img {
+        background-color: #C0EEFF;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down; */
+        /* background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 28px 32px;
+    }
+
+    .white-card-title {
+        font-size: 21px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -53px;
+        margin-bottom: 13px;
+    }
+
+    .minute-read-container {
+        margin-top: -51px;
+        margin-bottom: 8px;
+    }
+
+    .ab-minute-read {
+        margin-top: -53px;
+    }
+
+    .all-blogs-container {
+        width: 1090px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin: 5px;
+        width: 1080px;
+    }
+
+    .ab-card {
+        width: 348px;
+    }
+
+    .all-blogs-img {
+        width: 348px;
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+        /* background-color: rgba(0, 0, 0, 0.85) */
+    }
+}
+
+/* Large Laptop View */
+
+@media screen and (max-width: 1099px) and (min-width: 933px) {
+
+    .featured-title {
+        padding-top: 55px;
+    }
+
+    .featured-posts-container {
+        width: 920px;
+    }
+
+    .white-blog-card {
+        width: 297px;
+        height: 440px;
+    }
+
+    .white-blog-card-img {
+        width: 293px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black
+    }
+
+    .al-card-img {
+        background-color: #C0EEFF;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 28px 32px;
+    }
+
+    .white-card-title {
+        font-size: 21px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 13px;
+        font-size: 17px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -52px;
+        margin-bottom: 8px; 
+    } 
+    
+    .minute-read-container {
+        margin-top: -48px;
+        margin-bottom: 8px;
+    }
+    
+    .all-blogs-container {
+        width: 920px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin: 5px;
+        width: 905px;
+        height: 910px;
+    }
+
+    .ab-card {
+        width: 291px;
+        height: 435px;
+    }
+
+    .all-blogs-img {
+        width: 291px;
+    }
+
+    .ab-minute-read {
+        margin-top: -52px;
+    }
+
+    .ab-img-one {
+        object-fit: scale-down;
+        background-color: white;
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+    }
+
+}
+
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 932px) and (min-width: 770px) {
+
+    .other-blogs-section {
+        height: 680px;
+    }
+
+    .other-blogs-white {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .featured-title {
+        padding-top: 55px;
+        padding-bottom: 25px;
+    }
+
+    .featured-posts-section {
+        height: 1100px;
+    }
+
+    .featured-posts-container {
+        width: 725px;
+    }
+
+    .other-blogs-white {
+        height: 900px;
+    }
+
+    .white-blog-card {
+        width: 347px;
+        height: 420px;
+    }
+
+    .white-blog-card-img {
+        width: 343px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black
+    }
+
+    .al-card-img {
+        object-fit: cover;
+        width: 320px;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 25px 32px;
+    }
+
+    .white-card-title {
+        font-size: 21px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 17px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -50px;
+        margin-bottom: 8px; 
+    }  
+
+    .al-minute-read {
+        margin-top: -46px;
+        margin-bottom: 8px;
+    }
+
+    .all-blogs-section {
+        height: 1550px;
+    }
+
+    .all-blogs-container {
+        width: 725px;
+        height: 1450px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 720px;
+        height: 1329px;
+    }
+
+    .ab-card {
+        width: 347px;
+        height: 420px;
+        margin-left: 0px;
+    }
+
+    .all-blogs-img {
+        width: 347px;
+    }
+
+    .ab-minute-read {
+        margin-top: -49px;
+        margin-bottom: 5px;
+        height: 40px;
+        width: 125px;
+    }
+
+    .ab-img-one {
+        object-fit: scale-down;
+        background-color: white;
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+    }
+}
+
+/* Small Laptop View */
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .other-blogs-section {
+        height: 660px;
+    }
+
+    .other-blogs-white {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .featured-title {
+        padding-top: 55px;
+        padding-bottom: 25px;
+    }
+
+    .featured-posts-section {
+        height: 1100px;
+    }
+
+    .featured-posts-container {
+        width: 576px;
+    }
+
+    .other-blogs-white {
+        height: 900px;
+    }
+
+    .white-blog-card {
+        width: 276px;
+        height: 420px;
+    }
+
+    .white-blog-card-img {
+        width: 272px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black
+    }
+
+    .al-card-img {
+        object-fit: cover;
+        width: 255px;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 25px 30px;
+    }
+
+    .white-card-title {
+        font-size: 20px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -50px;
+        margin-bottom: 8px; 
+    }  
+
+    .al-minute-read {
+        margin-top: -53px;
+        margin-bottom: 8px;
+    }
+
+    .minute-read-container {
+        margin-top: -42px;
+        margin-bottom: 6px;
+    }
+
+    .all-blogs-section {
+        height: 1520px;
+    }
+
+    .all-blogs-container {
+        width: 576px;
+        height: 1450px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 566px;
+        height: 1280px;
+    }
+
+    .ab-card {
+        width: 276px;
+        height: 410px;
+        margin-left: 0px;
+    }
+
+    .all-blogs-img {
+        width: 276px;
+    }
+
+    .ab-minute-read {
+        margin-top: -49px;
+        margin-bottom: 5px;
+        height: 40px;
+        width: 125px;
+    }
+
+    .ab-img-one {
+        object-fit: scale-down
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+    }
+}
+
+/* Tiny Laptop View */
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .other-blogs-section {
+        height: 580px;
+    }
+
+    .other-blogs-white {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .featured-title {
+        padding-top: 55px;
+        padding-bottom: 25px;
+    }
+
+    .featured-posts-section {
+        height: 1000px;
+    }
+
+    .featured-posts-container {
+        width: 450px;
+    }
+
+    .other-blogs-white {
+        height: 815px;
+    }
+
+    .white-blog-card {
+        width: 214px;
+        height: 389px;
+    }
+
+    .white-blog-card-img {
+        width: 210px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black;
+        height: 150px;
+        
+    }
+
+    .al-card-img {
+        object-fit: cover;
+        background-color: rgba(8, 122, 163, 0.1);
+        width: 180px;
+        height: 150px;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 20px 20px;
+    }
+
+    .white-card-title {
+        font-size: 18px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 14px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -43px;
+        margin-bottom: 8px; 
+        height: 35px;
+        width: 120px;
+    } 
+
+    .all-blogs-section {
+        height: 1465px;
+    }
+
+    .all-blogs-container {
+        width: 450px;
+        height: 1440px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 440px;
+        height: 1260px;
+    }
+
+    .ab-card {
+        width: 214px;
+        height: 385px;
+        margin-left: 0px;
+    }
+
+    .all-blogs-img {
+        width: 214px;
+        height: 150px;
+    }
+
+    .ab-minute-read {
+        margin-top: -40px;
+        margin-bottom: 5px;
+        height: 32px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .al-minute-read {
+        margin-top: -35px;
+        margin-bottom: 5px;
+    }
+
+    .ab-img-one {
+        object-fit: scale-down;
+        background-color: white;
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+    }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+
+    .other-blogs-white {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1244px;
+    }
+
+    .featured-title {
+        padding-top: 45px;
+        padding-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .featured-posts-section {
+        height: 1380px;
+    }
+
+    .featured-posts-container {
+        width: 362px;
+    }
+
+    .white-blog-card {
+        width: 350px;
+        height: 389px;
+    }
+
+    .white-blog-card-img {
+        width: 346px;
+        height: 183px;
+        object-fit: scale-down;
+    }
+
+    .card-two-image {
+        object-fit: scale-down;
+        background-color: black;
+        height: 93px;
+    }
+
+    .white-card-three {
+        object-fit: cover;
+        /* object-fit: scale-down;
+        background-color: rgba(0, 0, 0, 0.85) */
+    }
+
+    .blog-card-content {
+        padding: 20px 20px;
+    }
+
+    .white-card-title {
+        font-size: 22px;
+    }
+
+    .white-card-words p {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+
+    .minute-read-container-blue {
+        margin-top: -43px;
+        margin-bottom: 8px; 
+        height: 35px;
+        width: 120px;
+    } 
+
+    .all-blogs-section {
+        height: 2650px;
+    }
+
+    .all-blogs-container {
+        width: 362px;
+        height: 2650px;
+    }
+
+    .all-blogs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5px;
+        width: 352px;
+        height: 2467px;
+    }
+
+    .ab-card {
+        width: 350px;
+        height: 385px;
+        margin-left: 0px;
+    }
+
+    .all-blogs-img {
+        width: 350px;
+        height: 183px;
+    }
+
+    .ab-minute-read {
+        margin-top: -40px;
+        margin-bottom: 5px;
+        height: 32px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .ab-img-one {
+        object-fit: scale-down;
+        background-color: white;
+    }
+
+    .ab-img-three {
+        object-fit: cover;
+    }
+}
+
+/* BLOG POST - I LOVE WRESTLING */
+
+/* Large laptop View */
+
+@media screen and (max-width: 933px) and (min-width: 770px) {
+
+    .other-blogs-section {
+        height: 645px;
+    }
+
+    .other-blogs-container {
+        width: 663px;
+    }
+
+    .blog-header-image {
+        margin: 54px 0px;
+    }
+
+    .blog-videos {
+        width: 100%;
+        height: 430px;
+    }
+
+    .also-like-title {
+        padding-top: 60px;
+    }
+}
+
+/* Medium Laptop View */
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .other-blogs-section {
+        height: 625px;
+    }
+
+    .other-blogs-container {
+        width: 540px;
+    }
+
+    .blog-header-image {
+        margin: 45px 0px;
+    }
+
+    .blog-videos {
+        width: 100%;
+        height: 327px;
+    }
+
+    #page-title {
+        font-size: 31px;
+    }
+
+    .also-like-title {
+        padding-top: 50px;
+        font-size: 26px;
+    }
+}
+
+
+/* Tiny Laptop View */
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .other-blogs-container {
+        width: 390px;
+    }
+
+    .blog-header-image {
+        margin: 40px 0px;
+    }
+
+    #page-title {
+        font-size: 31px;
+    }
+
+    .blog-videos {
+        width: 100%;
+        height: 260px;
+    }
+
+    .about-border {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .also-like-card-content {
+        padding: 20px 26px;
+    }
+
+    .also-like-title {
+        padding-top: 50px;
+        font-size: 26px;
+    }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+
+    .other-blogs-section {
+        height: 668px;
+    }
+
+    .blog-header-image {
+        margin: 35px 0px;
+    }
+    
+    #page-title {
+        font-size: 26px;
+    }
+
+    .blog-videos {
+        width: 100%;
+        height: 193px;
+    }
+
+    .about-border {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .social-icons-body {
+        margin-bottom: 60px;
+    }
+
+    .also-like-title {
+        width: 314px;
+        font-size: 22px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .also-like-card-content {
+        padding: 17px 32px;
+    }
+
+    .al-card-img {
+        width: 300px;
+        object-fit: cover;
+        height: 93px;
+    }
+}
+
+
+/* BLOG POST - DANNY Q&A */
+
+/* Large laptop View */
+
+@media screen and (max-width: 933px) and (min-width: 770px) {
+
+    .blog-header-image {
+        margin: 35px 0px;
+    }
+
+    .about-border {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .social-icons-body {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .blog-header-image {
+        margin: 30px 0px;
+    }
+
+    .about-border {
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+
+    .social-icons-body {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .blog-header-image {
+        margin: 22px 0px;
+    }
+
+    .about-border {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .social-icons-body {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+
+
