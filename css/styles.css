@@ -1690,7 +1690,7 @@ body {
     }
 
     .card-three-image {
-        object-fit: scale-down;
+        /* object-fit: scale-down; */
         background-color: rgba(8, 122, 163, 0.1);
     }
 
