@@ -1,0 +1,194 @@
+.topnav {
+    background-color: black;
+    height: 81px;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.nav-wrapper {
+    max-width: 1300px;
+    margin: 0 auto; 
+    padding: 1rem 0rem 65px;
+}
+
+.logo {
+    float: left;
+    height: 60px;
+    position: absolute;
+    top: 6.5px;
+    padding-left: 64px;
+}
+
+.dropdown-header {
+    float: right;
+    display: none;
+}
+
+.dropdown-icon {
+    display: none;
+}
+
+.x-icon {
+    display: none;
+    width: 45px;
+    height: 45px;
+}
+
+.x-menu-image {
+    width: 45px;
+}
+
+.open .x-icon {
+    display: block;
+}
+
+.open .dropdown-icon {
+    display: none;
+}
+
+.topnav-right a {
+    float: left;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 2px;
+    color: white;
+}  
+
+.topnav-right {
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 2px; 
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-right: 64px;
+}
+
+.dropdown-buttons {
+    list-style: none;
+}
+
+.dropdown-buttons li a {
+    color: white;
+}
+
+.blog-button {
+    height: 100%;
+}
+
+.cool-shit-button {
+    height: 100%;
+}
+
+.trumps-button {
+    height: 100%;
+    padding: 6px 16px;
+}
+
+.contact-button {
+    background-color: red;
+    border-radius: 6px;
+    height: 35px;
+}
+
+
+
+
+@media screen and (max-width: 599px) {
+
+    .topnav-right {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 35px;
+    }
+
+    .dropdown-header {
+        display: initial;
+        padding-right: 30px;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .dropdown-buttons {
+        padding-left: 0px;
+        padding-top: 74px;
+        margin-right: 20px;
+        margin-left: -120px;
+        margin-top: 19.5px;
+        height: 255px;
+        width: 170px;
+        position: absolute;
+        display: none;
+        background-color: #C0EEFF;
+    }
+
+    .dropdown-header.open ul {
+        display: block;
+        border: 1px solid black;
+    }
+
+    .dropdown-buttons li {
+        height: 2.7rem;
+        padding-top: 11px;
+    }
+
+    .dropdown-buttons li a {
+        padding: 10px 16px 10px 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+
+    .dropdown-buttons li a:hover {
+        color: red;
+    }
+
+    .dropdown-icon {
+        display: initial; 
+        padding-left: 30px;
+    }
+
+    .dropdown-image {
+        width: 40px;
+    }
+
+    .x-icon {
+        margin-right: 0px;
+        margin-top: -5px;
+    }
+
+    .contact-button {
+        background-color: initial;
+    }
+}
+
+
+@media screen and (max-width: 699px) and (min-width: 600px) {
+
+    .logo {
+        padding-left: 45px;
+        padding-top: 5px;
+        height: 58px;
+    }
+
+    .logo a img {
+        height: 58px;
+    }
+
+    .topnav-right {
+        padding-right: 45px;
+    }
+
+    .topnav-right a {
+        font-size: 16px;
+    }
+}

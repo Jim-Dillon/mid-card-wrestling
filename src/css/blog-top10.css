@@ -1,0 +1,23 @@
+/* BLOG PAGE - TOP 10 (PART ONE) */
+
+.blog-t10-img-container {
+    max-width: 944px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 27px;
+}
+
+.blog-top10-img {
+    width: 100%;
+}
+
+.blog-top10-header {
+    margin-bottom: 30px;
+}
+
+/* BLOG PAGE - TOP 10 (PART TWO) */
+
+.punk-video {
+    height: 470px;
+    width: 100%;
+}

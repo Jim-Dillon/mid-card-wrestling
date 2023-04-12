@@ -1,0 +1,53 @@
+/* FEATURED POSTS SECTION
+
+.other-blogs {
+    display: flex; 
+    justify-content: space-between; 
+    overflow: hidden;  
+    margin: 5px;
+}
+
+.blog-listing-image-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.blog-listing-image-hero {
+    width: 100%;
+}
+
+.featured-posts-section {
+    background-color: #f3f3f3;
+    height: 672px;
+}
+
+.featured-posts-container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.ab-title {
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+.all-blogs-section {
+    background-color: white;
+    height: 1162px;
+}
+
+.all-blogs-container {
+    max-width: 1278px;
+    margin: 0 auto;
+}
+
+.all-blogs-row1 {
+    margin-bottom: 41px;
+} */
+
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+    
+}
