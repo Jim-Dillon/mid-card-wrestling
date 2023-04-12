@@ -1,3 +1,95 @@
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    height: 425px;
+    width: 856px;
+    margin: 0 auto;
+}
+
+.carousel__cards {
+    width: 423px;
+    margin-left: 0;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__button img {
+    width: 12px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: red;
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+/* BLOG CARDS */
+
 .card-one {
     width: 423px;
     height: 425px;
@@ -150,96 +242,6 @@
 }
 
 
-/* Other Blogs Carousel*/
-
-.carousel {
-    position: relative;
-    height: 425px;
-    width: 856px;
-    margin: 0 auto;
-}
-
-.carousel__cards {
-    width: 423px;
-    margin-left: 0;
-}
-
-.carousel__track-container {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel__track {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
-}
-
-.carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.slide-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel__button--left {
-    left: -40px;
-}
-
-.carousel__button--right {
-    right: -40px;
-}
-
-.carousel__button img {
-    width: 12px;
-}
-
-.carousel__nav {
-    display: flex;
-    justify-content: center;
-    padding: 45px 0;
-}
-
-.carousel__indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: black;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.carousel__indicator.current-slide {
-    background: red;
-    width: 25px;
-    height: 25px;
-    margin-top: -5px;
-}
-
-.is-hidden {
-    display: none;
-}
-
-
 /* BLOG LISTING PAGE */
 
 .all-blogs {
@@ -370,6 +372,13 @@
     margin-bottom: 41px;
 }
 
+
+
+
+
+
+
+/* Mobile Design */
 
 @media screen and (max-width: 449px) {
 
