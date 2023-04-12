@@ -1,0 +1,460 @@
+.cool-shit-hero-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cool-shit-hero-image {
+    width: 100%;
+}
+
+.cool-shit-featured-section {
+    background-color: #f3f3f3;
+    height: 930px;
+    margin-top: -4px;
+}
+
+.cool-shit-featured-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cool-shit-video-container {
+    margin: 0 auto;
+    margin: 27px 0px; 
+}
+
+.hangman-video {
+    width: 100%;
+    height: 550px;
+}
+
+.cool-shit-main-section {
+    height: 1043px;
+}
+
+.cool-shit-main-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 89px;
+}
+
+.cool-shit-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cool-shit-row1-img-container {
+    padding-right: 65px;
+}
+
+.cool-shit-titles {
+    margin-top: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cool-shit-row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.cool-shit-row2-img-container {
+    padding-left: 65px;
+}
+
+.cool-shit-highlights-section {
+    height: 851px;
+    background-color: #f3f3f3;
+}
+
+.cool-shit-highlights-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cool-shit-highlights-container {
+    max-width: 940px;
+}
+
+.highlights-title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 56px;
+    padding-top: 66px;
+}
+
+.highlights-img-container {
+    max-width: 930px;
+}
+
+.highlights-img {
+    max-width: 920px;
+}
+
+
+@media screen and (max-width: 449px) {
+
+    .cool-shit-featured-section {
+        height: 625px;   
+    }    
+
+    .cool-shit-featured-container {
+        width: 368px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 30px;
+        padding-bottom: 8px;
+    }
+
+    .cool-shit-video-container {
+        margin-top: 20px;
+    }
+    
+    .hangman-video {
+        height: 205px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 370px;
+    }
+
+    .cool-shit-main-section {
+        height: 1283px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 340px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-img {
+        width: 340px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 340px;
+    }
+
+    .cool-shit-row2 {
+        width: 346px;
+        margin-top: 60px;
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+        width: 346px;
+    }
+
+    .cool-shit-row2-img {
+        width: 346px;
+    }
+
+    .highlights-title {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 510px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 375px;
+    }
+
+    .highlights-img-container {
+        width: 355px;
+    }
+
+    .highlights-img {
+        width: 355px;
+    }
+}
+
+
+/* BIGGER THAN MOBILE */
+
+@media screen and (max-width: 549px) and (min-width: 450px) {
+
+    .cool-shit-featured-section {
+        height: 625px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 430px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 30px;
+        padding-bottom: 8px;
+    }
+    
+    .hangman-video {
+        height: 245px;
+    }   
+    
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 430px;
+    }
+
+    .cool-shit-main-section {
+        height: 1426px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 417px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .highlights-title {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 540px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 440px;
+    }
+
+    .highlights-img-container {
+        width: 420px;
+    }
+
+    .highlights-img {
+        width: 420px;
+    }
+}
+
+
+@media screen and (max-width: 649px) and (min-width: 550px) {
+
+    .cool-shit-featured-section {
+        height: 665px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 510px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    
+    .hangman-video {
+        height: 290px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 80px;
+        width: 430px;
+    }
+
+    .cool-shit-main-section {
+        height: 1426px;
+    }
+
+    .cool-shit-row1 {
+        display: initial;
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 0px;
+        width: 417px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .cool-shit-row1-text {
+        margin: 0 auto;
+        width: 417px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .highlights-title {
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 580px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 530px;
+    }
+
+    .highlights-img-container {
+        width: 510px;
+    }
+
+    .highlights-img {
+        width: 510px;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 650px) {
+
+    .cool-shit-featured-section {
+        height: 740px;
+    }    
+
+    .cool-shit-featured-container {
+        width: 630px;
+    }
+    
+    .featured-posts-title {
+        padding-top: 50px;
+    }
+    
+    .hangman-video {
+        height: 360px;
+    }
+
+    .cool-shit-main-section {
+        height: 1000px;
+    }
+
+    .cool-shit-main-container {
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cool-shit-row1-img-container {
+        padding-right: 40px;
+    }
+
+    .cool-shit-row1-img {
+        width: 380px;
+    }
+
+    .cool-shit-titles {
+        font-size: 22px;
+    }
+
+    .cool-shit-row2 {
+        margin-top: 120px;
+    }
+
+    .cool-shit-row2-img-container {
+        padding-left: 40px;
+    }
+
+    .cool-shit-row2-img {
+        width: 370px;
+    }
+
+    .highlights-title {
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 630px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 630px;
+    }
+
+    .highlights-img-container {
+        width: 610px;
+    }
+
+    .highlights-img {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 800px) {
+
+    .cool-shit-featured-section {
+        height: 820px;
+    }
+
+    .cool-shit-featured-container {
+        width: 780px;
+    }
+
+    .featured-posts-title {
+        padding-top: 60px;
+    }
+
+    .hangman-video {
+        height: 450px;
+    }
+
+    .cool-shit-highlights-section {
+        height: 730px;
+    }
+
+    .cool-shit-highlights-container {
+        width: 770px;
+    }
+
+    .highlights-img-container {
+        width: 750px;
+    }
+
+    .highlights-img {
+        width: 750px;
+    }
+}

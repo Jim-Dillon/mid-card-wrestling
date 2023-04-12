@@ -1,0 +1,236 @@
+.home-image-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.homepage-hero {
+    width: 100%;
+}
+
+.recent-blogs-section {
+    background-color: white;
+    height: 750px;
+}
+
+.recent-blogs-container {
+    max-width: 872px;
+    margin: 0 auto;
+}
+
+.recent-blogs-title {
+    padding-bottom: 30px;
+}
+
+.cool-shit-section {
+    background-color: #f3f3f3;
+    height: 699px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cool-shit-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cool-shit-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cool-shit-words {
+    max-width: 427px;
+    padding-top: 17px;
+}
+
+.cool-title-1 {
+    text-decoration: none;
+}
+
+.cool-shit-second-para {
+    margin-bottom: 30px;
+}
+
+.see-more-button {
+    color: red;    
+    border: 2px solid red;
+    border-radius: 6px;
+    height: 39px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width: 449px) {
+
+    .recent-blogs-section {
+        height: 680px;
+    }
+
+    .recent-blogs-container {
+        width: 375px;
+        height: 680px;
+    }
+
+    .recent-blogs-title {
+        font-size: 24px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+        width: 300px;
+        margin: 0 auto;
+    }  
+
+    .cool-shit-section {
+        height: 730px;
+        width: 100%;
+    }
+
+    .cool-shit-container {
+        width: 369px;
+    }
+
+    .cool-shit-content {
+        display: initial;
+        width: 375px;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+        font-size: 24px;
+    }
+
+    .cool-shit-image {
+        width: 344px;
+    }
+
+    .cool-shit-words {
+        width: 355px;
+        padding-left: 10px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+/* BIGGER THAN MOBILE */ 
+
+@media screen and (max-width: 599px) and (min-width: 450px) {
+
+    .recent-blogs-section {
+        height: 563px;
+    }
+
+    .recent-blogs-container {
+        width: 392px;
+        height: 480px;
+    }
+
+    .recent-blogs-title {
+        font-size: 26px;
+        padding-top: 50px;
+    }     
+    
+    .cool-shit-section {
+        height: 770px;
+    }
+
+    .cool-shit-container {
+        width: 414px;
+    }
+
+    .cool-shit-content {
+        display: initial;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+    }
+
+    .cool-shit-image {
+        width: 400px;
+    }
+
+    .cool-shit-words {
+        width: 415px;
+        padding-left: 10px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 769px) and (min-width: 600px) {
+
+    .recent-blogs-section {
+        height: 600px;
+    }
+
+    .recent-blogs-container {
+        width: 524px;
+        height: 480px;
+    }
+
+    .recent-blogs-title {
+        font-size: 26px;
+        padding-top: 50px;
+    }  
+
+    .cool-shit-section {
+        height: 770px;
+    }
+
+    .cool-shit-container {
+        width: 440px;
+    }
+
+    .cool-home-title {
+        padding-top: 60px;
+    }
+
+    .cool-shit-words {
+        width: 417px;
+    }
+
+    .cool-shit-words p {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 932px) and (min-width: 770px) {
+
+    .recent-blogs-section {
+        height: 690px;
+    }
+
+    .recent-blogs-container {
+        width: 666px;
+    }
+
+    .recent-blogs-title {
+        font-size: 28px;
+        padding-top: 60px;
+    }   
+
+    .cool-shit-content {
+        width: 750px;
+    }
+
+    .cool-shit-image {
+        width: 400px;
+    }
+
+    .cool-shit-words {
+        width: 300px;
+    }
+}
