@@ -95,6 +95,7 @@
     height: 425px;
     background-color: #C0EEFF;
     border-radius: 1rem;
+    margin-right: 5px;
 }
 
 .al-card-img {
@@ -168,7 +169,7 @@
     height: 425px;
     background-color: #C0EEFF;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-left: 5px;
 }
 
 .card-two-image, .home-card-two-image {
@@ -179,11 +180,11 @@
 }
 
 .card-three {
-    width: 427px;
+    width: 423px;
     height: 425px;
     background-color: #C0EEFF;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-right: 5px;
 }
 
 .card-three-image {
@@ -198,11 +199,11 @@
 }
 
 .card-four {
-    width: 427px;
+    width: 423px;
     height: 425px;
     background-color: #C0EEFF;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-left: 5px;
 }
 
 .card-four-image {
@@ -391,12 +392,13 @@
         width: 300px;
     }
 
-    .card-one, .card-two, .card-three {
+    .card-one, .card-two, .card-three, .card-four {
         height: 234px;
     }
 
     .carousel__cards {
         margin-bottom: 8px;
+        margin-left: 0px;
     }
 
     .home-blog-card-content {
@@ -612,7 +614,7 @@
         width: 180px;
     }
 
-    .card-one, .card-two, .card-three {
+    .card-one, .card-two, .card-three, .card-four {
         height: 342px;
     }
 
@@ -823,7 +825,7 @@
         width: 255px;
     }
 
-    .card-one, .card-two, .card-three {
+    .card-one, .card-two, .card-three, .card-four {
         height: 380px;
     }
 
@@ -1013,7 +1015,7 @@
         width: 320px;
     }
 
-    .card-one, .card-two, .card-three {
+    .card-one, .card-two, .card-three, .card-four {
         height: 390px;
     }
 
