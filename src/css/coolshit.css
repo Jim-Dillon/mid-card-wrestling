@@ -1,5 +1,5 @@
 .cool-shit-hero-container {
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -42,6 +42,10 @@
     margin-top: 89px;
 }
 
+.cool-shit-main-container img {
+    border-radius: 10px;
+}
+
 .cool-shit-row1 {
     display: flex;
     justify-content: space-between;
@@ -49,6 +53,10 @@
 
 .cool-shit-row1-img-container {
     padding-right: 65px;
+}
+
+.cool-shit-row1-img {
+    border-radius: 10px;
 }
 
 .cool-shit-titles {
@@ -94,6 +102,7 @@
 }
 
 .highlights-img {
+    border-radius: 10px;
     max-width: 920px;
 }
 
